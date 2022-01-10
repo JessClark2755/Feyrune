@@ -12,16 +12,14 @@ import java.util.List;
 
 public class ModConfiguredFeatures
 {
-
     public static final List<OreFeatureConfig.Target> OVERWORLD_ADAMANTINE_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ADAMANTINE_ORE.getDefaultState()),
             OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ADAMANTINE_ORE.getDefaultState()));
 
-    public static final ConfiguredFeature<?, ?> ADAMANTINE_ORE = register("adamantine_ore",
-            Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_ADAMANTINE_ORES, 6)));
+    public static final ConfiguredFeature<?, ?> ADAMANTINE_ORE = register("adamanitne_ore",
+            Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_ADAMANTINE_ORES, 7)));
 
-    public static final ConfiguredFeature<?, ?> DEEPSLATE_ADAMANTINE_ORE = register("deepslate_adamantine_ore",
-            Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_ADAMANTINE_ORES, 6)));
+
 
     public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(FeyruneMod.MOD_ID, name),
@@ -33,8 +31,7 @@ public class ModConfiguredFeatures
                 Feature.SIMPLE_BLOCK.configure(new SimpleBlockFeatureConfig(block)).withInAirFilter());
     }
 
-    public static void registerConfiguredFeatures()
-    {
-        FeyruneMod.LOGGER.info("Registering ModConfiguredFeatures for " + FeyruneMod.MOD_ID);
+    public static void registerConfiguredFeatures() {
+        System.out.println("Registering ModConfiguredFeatures for " + FeyruneMod.MOD_ID);
     }
 }
