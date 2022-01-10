@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "feyrune:adamantine_block"
+    }
+  ],
+  "result":
+  {
+    "item": "feyrune:adamantine_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "###",
+    "###",
+    "###"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "feyrune:raw_adamantine"
+    }
+  },
+  "result":
+  {
+    "item": "feyrune:raw_adamantine_block"
+  }
+}

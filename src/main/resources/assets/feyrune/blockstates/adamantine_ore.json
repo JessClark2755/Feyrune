@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "feyrune:block/adamantine_ore"
+    }
+  }
+}

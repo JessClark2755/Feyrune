@@ -1,0 +1,17 @@
+{
+  "item.feyrune.adamantine_ingot": "Adamantine Ingot",
+  "item.feyrune.adamantine_nugget": "Adamantine Nugget",
+  "item.feyrune.raw_adamantine": "Raw Adamantine",
+  "item.feyrune.adamantine_sword": "Adamantine Sword",
+  "item.feyrune.adamantine_pickaxe": "Adamantine Pickaxe",
+  "item.feyrune.adamantine_axe": "Adamantine Axe",
+  "item.feyrune.adamantine_shovel": "Adamantine Shovel",
+  "item.feyrune.adamantine_hoe": "Adamantine Hoe",
+
+  "block.feyrune.adamantine_block": "Adamantine Block",
+  "block.feyrune.raw_adamantine_block": "Raw Adamantine Block",
+  "block.feyrune.adamantine_ore": "Adamantine Ore",
+  "block.feyrune.deepslate_adamantine_ore": "Deepslate Adamantine Ore",
+
+  "itemGroup.feyrune.adamantine": "Adamantine"
+}
