@@ -9,7 +9,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    ADAMANTINE(MiningLevels.IRON, 720, 1F, 1F, 25, () ->
+    ADAMANTINE(MiningLevels.IRON, 720, 7F, 1F, 25, () ->
             Ingredient.ofItems(ModItems.ADAMANTINE_INGOT));
 
     private final int miningLevel;

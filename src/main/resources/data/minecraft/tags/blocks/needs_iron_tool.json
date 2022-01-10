@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values":
+  [
+    "feyrune:adamantine_ore",
+    "feyrune:adamantine_block",
+    "feyrune:raw_adamantine_block",
+    "feyrune:deepslate_adamantine_ore"
+  ]
+}

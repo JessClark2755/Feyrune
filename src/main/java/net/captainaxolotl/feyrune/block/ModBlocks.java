@@ -17,13 +17,13 @@ public class ModBlocks
 
     //ADAMANTINE BLOCKS
     public static final Block ADAMANTINE_BLOCK = registerBlock("adamantine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
     public static final Block RAW_ADAMANTINE_BLOCK = registerBlock("raw_adamantine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
     public static final Block ADAMANTINE_ORE = registerBlock("adamantine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
     public static final Block DEEPSLATE_ADAMANTINE_ORE = registerBlock("deepslate_adamantine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group)
     {
