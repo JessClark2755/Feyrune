@@ -1,5 +1,7 @@
 package net.captainaxolotl.feyrune;
 
+import net.captainaxolotl.feyrune.world.feature.ModConfiguredFeatures;
+import net.captainaxolotl.feyrune.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,8 +18,11 @@ public class FeyruneMod implements ModInitializer
 	public void onInitialize()
 	{
 		LOGGER.info("Loading Feyrune!");
+		ModConfiguredFeatures.registerConfiguredFeatures();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGen.generateModWorldGen();
 	}
 }
