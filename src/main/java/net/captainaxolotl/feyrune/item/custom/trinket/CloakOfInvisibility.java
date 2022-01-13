@@ -15,18 +15,20 @@ import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
 import java.util.List;
-import static net.minecraft.entity.effect.StatusEffects.NIGHT_VISION;
 
-public class GogglesOfNight extends TrinketItem
+import static net.minecraft.entity.effect.StatusEffects.INVISIBILITY;
+
+public class CloakOfInvisibility extends TrinketItem
 {
-    public GogglesOfNight(Settings settings)
-    {
+
+
+    public CloakOfInvisibility(Settings settings) {
         super(settings);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, World world, List<Text> list, TooltipContext context) {
-        list.add(new LiteralText("See in the dark").formatted(Formatting.GREEN));
+        list.add(new LiteralText("Become invisible").formatted(Formatting.LIGHT_PURPLE));
     }
 
     @Override
@@ -34,16 +36,16 @@ public class GogglesOfNight extends TrinketItem
     {
         super.onEquip(stack, slot, entity);
         //Check if we have the trinket equipped, a janky way of doing it but I'm dumb
-        if (!entity.hasStatusEffect(NIGHT_VISION))
+        if (!entity.hasStatusEffect(INVISIBILITY))
         {
             entity.playSound(SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1f, 1f);
         }
-        entity.addStatusEffect(new StatusEffectInstance(NIGHT_VISION, 999999, 0, true, false, false));
+        entity.addStatusEffect(new StatusEffectInstance(INVISIBILITY, 999999, 1, true, false, false));
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
-        entity.removeStatusEffect(NIGHT_VISION);
+        entity.removeStatusEffect(INVISIBILITY);
     }
 }

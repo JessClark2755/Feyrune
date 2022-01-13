@@ -4,6 +4,8 @@ import net.captainaxolotl.feyrune.FeyruneMod;
 import net.captainaxolotl.feyrune.item.custom.ModAxeItem;
 import net.captainaxolotl.feyrune.item.custom.ModHoeItem;
 import net.captainaxolotl.feyrune.item.custom.ModPickaxeItem;
+import net.captainaxolotl.feyrune.item.custom.trinket.AmuletOfHealth;
+import net.captainaxolotl.feyrune.item.custom.trinket.CloakOfInvisibility;
 import net.captainaxolotl.feyrune.item.custom.trinket.GogglesOfNight;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
@@ -49,15 +51,23 @@ public class ModItems
     public static final Item ADAMANTINE_CHESTPLATE = registerItem("adamantine_chestplate",
             new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
-    public static final Item ORICHALCUM_LEGGINGS = registerItem("adamantine_leggings",
+    public static final Item ADAMANTINE_LEGGINGS = registerItem("adamantine_leggings",
             new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
-    public static final Item ORICHALCUM_BOOTS = registerItem("adamantine_boots",
+    public static final Item ADAMANTINE_BOOTS = registerItem("adamantine_boots",
             new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
 
-    //Magic Items: Trinket
-    public static final Item GOGGLES_OF_NIGHT = registerItem("goggles_of_night", new GogglesOfNight(new FabricItemSettings()));
+    //ARCANE CRYSTAL
+    public static final Item ARCANE_DUST = registerItem("arcane_dust",
+        new Item(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
+    public static final Item ARCANE_CRYSTAL = registerItem("arcane_crystal",
+            new Item(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
+
+    //MAGIC ITEMS
+    public static final Item GOGGLES_OF_NIGHT = registerItem("goggles_of_night", new GogglesOfNight(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
+    public static final Item AMULET_OF_HEALTH = registerItem("amulet_of_health", new AmuletOfHealth(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
+    public static final Item CLOAK_OF_Invisibility = registerItem("cloak_of_invisibility", new CloakOfInvisibility(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
 
     private static <T extends Item> T registerItem(String name, T item){
         return Registry.register(Registry.ITEM, new Identifier(FeyruneMod.MOD_ID, name), item);

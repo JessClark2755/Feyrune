@@ -12,12 +12,18 @@
   "item.feyrune.adamantine_leggings": "Adamantine Leggings",
   "item.feyrune.adamantine_boots": "Adamantine Boots",
 
-  "item.feyrune.goggles_of_night": "Goggles of Night",
+  "item.feyrune.arcane_crystal": "§3Arcane Crystal",
+  "item.feyrune.arcane_dust": "§3Arcane Dust",
+
+  "item.feyrune.goggles_of_night": "§2Goggles of Night",
+  "item.feyrune.amulet_of_health": "§3Amulet of Health",
+  "item.feyrune.cloak_of_invisibility": "§5Cloak of Invisibility",
 
   "block.feyrune.adamantine_block": "Adamantine Block",
   "block.feyrune.raw_adamantine_block": "Raw Adamantine Block",
   "block.feyrune.adamantine_ore": "Adamantine Ore",
   "block.feyrune.deepslate_adamantine_ore": "Deepslate Adamantine Ore",
 
-  "itemGroup.feyrune.adamantine": "Adamantine"
+  "itemGroup.feyrune.adamantine": "Adamantine",
+  "itemGroup.feyrune.magic_items": "Magic Items"
 }
