@@ -67,7 +67,7 @@ public class ModItems
     //MAGIC ITEMS
     public static final Item GOGGLES_OF_NIGHT = registerItem("goggles_of_night", new GogglesOfNight(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
     public static final Item AMULET_OF_HEALTH = registerItem("amulet_of_health", new AmuletOfHealth(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
-    public static final Item CLOAK_OF_Invisibility = registerItem("cloak_of_invisibility", new CloakOfInvisibility(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
+    public static final Item CLOAK_OF_INVISIBILITY = registerItem("cloak_of_invisibility", new CloakOfInvisibility(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
 
     private static <T extends Item> T registerItem(String name, T item){
         return Registry.register(Registry.ITEM, new Identifier(FeyruneMod.MOD_ID, name), item);
