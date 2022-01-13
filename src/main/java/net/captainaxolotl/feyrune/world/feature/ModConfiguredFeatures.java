@@ -16,8 +16,13 @@ public class ModConfiguredFeatures
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ADAMANTINE_ORE.getDefaultState()),
             OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ADAMANTINE_ORE.getDefaultState()));
 
-    public static final ConfiguredFeature<?, ?> ADAMANTINE_ORE = register("adamanitne_ore",
+    public static final List<OreFeatureConfig.Target> OVERWORLD_ARCANE_CRYSTAL_ORES = List.of(
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ARCANE_CRYSTAL_ORE.getDefaultState()));
+
+    public static final ConfiguredFeature<?, ?> ADAMANTINE_ORE = register("adamantine_ore",
             Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_ADAMANTINE_ORES, 7)));
+    public static final ConfiguredFeature<?, ?> ARCANE_CRYSTAL_ORE = register("arcane_crystal_ore",
+            Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_ARCANE_CRYSTAL_ORES, 4)));
 
 
 

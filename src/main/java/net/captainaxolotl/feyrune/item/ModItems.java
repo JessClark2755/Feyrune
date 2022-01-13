@@ -58,7 +58,7 @@ public class ModItems
             new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
 
-    //ARCANE CRYSTAL
+    //ARCANE
     public static final Item ARCANE_DUST = registerItem("arcane_dust",
         new Item(new FabricItemSettings().group(ModItemGroups.MAGIC_ITEMS)));
     public static final Item ARCANE_CRYSTAL = registerItem("arcane_crystal",

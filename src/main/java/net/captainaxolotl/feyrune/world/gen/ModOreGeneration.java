@@ -12,5 +12,8 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ADAMANTINE_ORE_LOWER_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ARCANE_CRYSTAL_ORE_KEY);
     }
 }

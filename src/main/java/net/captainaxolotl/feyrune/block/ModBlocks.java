@@ -25,6 +25,10 @@ public class ModBlocks
     public static final Block DEEPSLATE_ADAMANTINE_ORE = registerBlock("deepslate_adamantine_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
 
+    //ARCANE BLOCKS
+    public static final Block ARCANE_CRYSTAL_ORE = registerBlock("arcane_crystal_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.MAGIC_ITEMS);
+
     private static Block registerBlock(String name, Block block, ItemGroup group)
     {
         registerBlockItem(name, block, group);
