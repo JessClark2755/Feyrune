@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class FeyruneMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		FeyruneMod.LOGGER.info("This line is printed by an example mod mixin!");
+		FeyruneMod.LOGGER.info("Feyrune Mixin checking in");
 	}
 }

@@ -38,5 +38,15 @@
   "suggests":
   {
     "another-mod": "*"
+  },
+  "entrypoints":
+  {
+    "main":
+    [
+      "net.captainaxolotl.feyrune.FeyruneMod"
+    ],
+    "client": [
+      "net.captainaxolotl.feyrune.FeyruneClient"
+    ]
   }
 }

@@ -32,6 +32,6 @@ public class ModConfiguredFeatures
     }
 
     public static void registerConfiguredFeatures() {
-        System.out.println("Registering ModConfiguredFeatures for " + FeyruneMod.MOD_ID);
+        FeyruneMod.LOGGER.info("Registering ModConfiguredFeatures for " + FeyruneMod.MOD_ID);
     }
 }

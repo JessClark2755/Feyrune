@@ -4,6 +4,7 @@ import net.captainaxolotl.feyrune.FeyruneMod;
 import net.captainaxolotl.feyrune.item.custom.ModAxeItem;
 import net.captainaxolotl.feyrune.item.custom.ModHoeItem;
 import net.captainaxolotl.feyrune.item.custom.ModPickaxeItem;
+import net.captainaxolotl.feyrune.item.custom.trinket.GogglesOfNight;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -43,21 +44,22 @@ public class ModItems
 
     //ADAMANTINE ARMOR
     public static final Item ADAMANTINE_HELMET = registerItem("adamantine_helmet",
-            new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.HEAD,
+            new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
     public static final Item ADAMANTINE_CHESTPLATE = registerItem("adamantine_chestplate",
-            new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.CHEST,
+            new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
     public static final Item ORICHALCUM_LEGGINGS = registerItem("adamantine_leggings",
-            new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.LEGS,
+            new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
     public static final Item ORICHALCUM_BOOTS = registerItem("adamantine_boots",
-            new ArmorItem(ModArmorMaterials.ADAMANTINE, EquipmentSlot.FEET,
+            new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.ADAMANTINE)));
 
+    //Magic Items: Trinket
+    public static final Item GOGGLES_OF_NIGHT = registerItem("goggles_of_night", new GogglesOfNight(new FabricItemSettings()));
 
-    private static Item registerItem(String name, Item item)
-    {
+    private static <T extends Item> T registerItem(String name, T item){
         return Registry.register(Registry.ITEM, new Identifier(FeyruneMod.MOD_ID, name), item);
     }
 

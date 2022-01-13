@@ -9,7 +9,7 @@ import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial
+public enum AdamantineArmorMaterial implements ArmorMaterial
 {
     ADAMANTINE("adamantine", 18, new int[]{3, 5, 7, 2}, 29,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0F, 0.0F,
@@ -25,9 +25,9 @@ public enum ModArmorMaterials implements ArmorMaterial
     private final float knockbackResistance;
     private final Lazy<Ingredient> repairIngredientSupplier;
 
-    private ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts,
-                              int enchantability, SoundEvent equipSound, float toughness,
-                              float knockbackResistance, Supplier<Ingredient> repairIngredientSupplier) {
+    private AdamantineArmorMaterial(String name, int durabilityMultiplier, int[] protectionAmounts,
+                                    int enchantability, SoundEvent equipSound, float toughness,
+                                    float knockbackResistance, Supplier<Ingredient> repairIngredientSupplier) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
