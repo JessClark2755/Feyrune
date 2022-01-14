@@ -109,6 +109,11 @@ public class ModItems
             new ModMaceItem(ToolMaterials.NETHERITE, 7, -3f,
                     new FabricItemSettings().group(ItemGroup.COMBAT)));
 
+    //MAGIC WEAPONS
+    public static final Item DAGGER_OF_VENOM = registerItem("dagger_of_venom",
+            new DaggerOfVenom(ModToolMaterial.ADAMANTINE, 2, 0f,
+                    new FabricItemSettings().group(ItemGroup.COMBAT)));
+
     private static <T extends Item> T registerItem(String name, T item){
         return Registry.register(Registry.ITEM, new Identifier(FeyruneMod.MOD_ID, name), item);
     }
