@@ -2,6 +2,7 @@
   "replace": false,
   "values":
   [
-    "feyrune:cloak_of_invisibility"
+    "feyrune:cloak_of_invisibility",
+    "feyrune:cloak_of_protection"
   ]
 }

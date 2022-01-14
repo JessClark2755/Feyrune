@@ -18,15 +18,17 @@ import java.util.List;
 
 import static net.minecraft.entity.effect.StatusEffects.*;
 
-public class AmuletOfHealth extends TrinketItem
+public class CloakOfProtection extends TrinketItem
 {
-    public AmuletOfHealth(Settings settings) {
+
+
+    public CloakOfProtection(Settings settings) {
         super(settings);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, World world, List<Text> list, TooltipContext context) {
-        list.add(new LiteralText("More health").formatted(Formatting.AQUA));
+        list.add(new LiteralText("Extra protection").formatted(Formatting.AQUA));
     }
 
     @Override
@@ -34,16 +36,16 @@ public class AmuletOfHealth extends TrinketItem
     {
         super.onEquip(stack, slot, entity);
         //Check if we have the trinket equipped, a janky way of doing it but I'm dumb
-        if (!entity.hasStatusEffect(HEALTH_BOOST))
+        if (!entity.hasStatusEffect(RESISTANCE))
         {
             entity.playSound(SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1f, 1f);
         }
-    entity.addStatusEffect(new StatusEffectInstance(HEALTH_BOOST, 999999, 0, true, false, false));
+        entity.addStatusEffect(new StatusEffectInstance(RESISTANCE, 999999, 0, true, false, false));
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
-        entity.removeStatusEffect(HEALTH_BOOST);
+        entity.removeStatusEffect(RESISTANCE);
     }
 }

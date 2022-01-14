@@ -33,6 +33,7 @@
   "item.feyrune.goggles_of_night": "§2Goggles of Night",
   "item.feyrune.amulet_of_health": "§3Amulet of Health",
   "item.feyrune.cloak_of_invisibility": "§5Cloak of Invisibility",
+  "item.feyrune.cloak_of_protection": "§3Cloak of Protection",
 
   "item.feyrune.dagger_of_venom": "§3Dagger of Venom",
   "item.feyrune.mace_of_smiting": "§3Mace of Smiting",
@@ -44,5 +45,6 @@
   "block.feyrune.arcane_crystal_ore": "Arcane Crystal Ore",
 
   "itemGroup.feyrune.adamantine": "Adamantine",
-  "itemGroup.feyrune.magic_items": "Magic Items"
+  "itemGroup.feyrune.magic_items": "Magic Items",
+  "itemGroup.feyrune.feyrune": "Feyrune"
 }

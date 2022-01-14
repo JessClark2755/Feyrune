@@ -40,7 +40,7 @@ public class CloakOfInvisibility extends TrinketItem
         {
             entity.playSound(SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1f, 1f);
         }
-        entity.addStatusEffect(new StatusEffectInstance(INVISIBILITY, 999999, 1, true, false, false));
+        entity.addStatusEffect(new StatusEffectInstance(INVISIBILITY, 999999, 0, true, false, false));
     }
 
     @Override

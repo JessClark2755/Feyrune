@@ -17,17 +17,17 @@ public class ModBlocks
 
     //ADAMANTINE BLOCKS
     public static final Block ADAMANTINE_BLOCK = registerBlock("adamantine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.FEYRUNE);
     public static final Block RAW_ADAMANTINE_BLOCK = registerBlock("raw_adamantine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroups.FEYRUNE);
     public static final Block ADAMANTINE_ORE = registerBlock("adamantine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.FEYRUNE);
     public static final Block DEEPSLATE_ADAMANTINE_ORE = registerBlock("deepslate_adamantine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.ADAMANTINE);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.FEYRUNE);
 
     //ARCANE BLOCKS
     public static final Block ARCANE_CRYSTAL_ORE = registerBlock("arcane_crystal_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.MAGIC_ITEMS);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.FEYRUNE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group)
     {

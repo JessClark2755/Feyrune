@@ -52,6 +52,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -82,6 +83,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -112,6 +114,7 @@ public class ModLoot
                     .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
                     .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(uncommon))
                     .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(uncommon))
+                    .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(uncommon))
                     .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(uncommon));
 
             supplier.withPool(poolBuilder.build());
@@ -124,6 +127,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -155,6 +159,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -167,6 +172,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(veryRare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -198,6 +204,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -229,6 +236,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -272,6 +280,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -284,6 +293,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -315,6 +325,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -346,6 +357,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -377,6 +389,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -408,6 +421,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -439,6 +453,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -470,6 +485,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -501,6 +517,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(veryRare));
 
                 supplier.withPool(poolBuilder.build());
