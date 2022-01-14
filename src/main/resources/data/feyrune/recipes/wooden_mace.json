@@ -3,8 +3,8 @@
   "pattern":
   [
     "  #",
-    " S",
-    "S"
+    " S ",
+    "S  "
   ],
   "key":
   {
@@ -18,6 +18,6 @@
     }
   },
   "result": {
-    "item": "minecraft:wooden_mace"
+    "item": "feyrune:wooden_mace"
   }
 }

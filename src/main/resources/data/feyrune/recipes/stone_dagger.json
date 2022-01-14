@@ -1,22 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern":
-  [
-    "#",
-    "S"
+  "pattern": [
+    "X",
+    "#"
   ],
-  "key":
-  {
-    "#":
-    {
-      "tag": "minecraft:stone_tool_materials"
-    },
-    "S":
-    {
+  "key": {
+    "#": {
       "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "minecraft:stone_tool_materials"
     }
   },
   "result": {
-    "item": "minecraft:stone_dagger"
+    "item": "feyrune:stone_dagger"
   }
 }

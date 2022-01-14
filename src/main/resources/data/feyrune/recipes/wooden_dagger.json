@@ -2,21 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "#",
-    "S"
+    "X",
+    "#"
   ],
-  "key":
-  {
-    "#":
-    {
-      "tag": "minecraft:planks"
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
     },
-    "S":
-    {
-    "item": "minecraft:stick"
+    "X": {
+      "tag": "minecraft:planks"
     }
   },
   "result": {
-    "item": "minecraft:wooden_dagger"
+    "item": "feyrune:wooden_dagger"
   }
 }

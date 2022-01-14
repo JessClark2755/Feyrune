@@ -4,13 +4,13 @@
   [
     "  #",
     " S ",
-    "S "
+    "S  "
   ],
   "key":
   {
     "#":
     {
-      "item": "feyrune:gold_ingot"
+      "item": "minecraft:gold_ingot"
     },
     "S":
     {
