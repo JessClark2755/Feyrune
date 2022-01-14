@@ -63,6 +63,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -87,6 +91,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -121,6 +129,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -156,6 +168,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -181,6 +197,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -216,6 +236,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -251,6 +275,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -276,6 +304,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -301,6 +333,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -326,6 +362,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -351,6 +391,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -376,6 +420,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -401,6 +449,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -420,6 +472,7 @@ public class ModLoot
             if (VILLAGE_ARMORER_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
+                        .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
@@ -429,6 +482,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -446,6 +503,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -462,6 +523,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_PICKAXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SHOVEL).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_SWORD).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
+                        .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
