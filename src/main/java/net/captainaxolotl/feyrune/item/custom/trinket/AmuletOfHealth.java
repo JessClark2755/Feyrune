@@ -7,8 +7,8 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -33,12 +33,7 @@ public class AmuletOfHealth extends TrinketItem
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity)
     {
         super.onEquip(stack, slot, entity);
-        //Check if we have the trinket equipped, a janky way of doing it but I'm dumb
-        if (!entity.hasStatusEffect(HEALTH_BOOST))
-        {
-            entity.playSound(SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1f, 1f);
-        }
-    entity.addStatusEffect(new StatusEffectInstance(HEALTH_BOOST, 999999, 0, true, false, false));
+        entity.addStatusEffect(new StatusEffectInstance(HEALTH_BOOST, 999999, 0, true, false, false));
     }
 
     @Override

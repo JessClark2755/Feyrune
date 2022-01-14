@@ -1,14 +1,14 @@
 package net.captainaxolotl.feyrune.item;
 
+import dev.emi.trinkets.api.Trinket;
+import dev.emi.trinkets.api.TrinketItem;
+import dev.emi.trinkets.api.TrinketsApi;
 import net.captainaxolotl.feyrune.FeyruneMod;
 import net.captainaxolotl.feyrune.item.custom.*;
-import net.captainaxolotl.feyrune.item.custom.trinket.AmuletOfHealth;
-import net.captainaxolotl.feyrune.item.custom.trinket.CloakOfInvisibility;
-import net.captainaxolotl.feyrune.item.custom.trinket.CloakOfProtection;
-import net.captainaxolotl.feyrune.item.custom.trinket.GogglesOfNight;
+import net.captainaxolotl.feyrune.item.custom.trinket.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.data.DataTracker;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -66,6 +66,10 @@ public class ModItems
     public static final Item AMULET_OF_HEALTH = registerItem("amulet_of_health", new AmuletOfHealth(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item CLOAK_OF_INVISIBILITY = registerItem("cloak_of_invisibility", new CloakOfInvisibility(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item CLOAK_OF_PROTECTION = registerItem("cloak_of_protection", new CloakOfProtection(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item CLOAK_OF_THE_DOLPHIN = registerItem("cloak_of_the_dolphin", new CloakOfTheDolphin(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item RING_OF_SWIMMING = registerItem("ring_of_swimming", new RingOfSwimming(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item RING_OF_JUMPING = registerItem("ring_of_jumping", new RingOfJumping(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item GAUNTLETS_OF_GOLEM_POWER = registerItem("gauntlets_of_golem_power", new GauntletsOfGolemPower(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
 
     //FEYRUNE WEAPONS
     public static final Item ADAMANTINE_DAGGER = registerItem("adamantine_dagger",

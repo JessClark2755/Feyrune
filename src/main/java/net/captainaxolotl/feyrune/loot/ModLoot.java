@@ -36,6 +36,7 @@ public class ModLoot
     private static final int uncommon = 50;
     private static final int rare = 25;
     private static final int veryRare = 5;
+    private static final int legendary = 1;
 
 
 
@@ -53,6 +54,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -84,6 +89,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -115,6 +124,10 @@ public class ModLoot
                     .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(uncommon))
                     .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(uncommon))
                     .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(uncommon))
+                    .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(veryRare))
+                    .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(veryRare))
+                    .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(veryRare))
+                    .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(veryRare))
                     .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(uncommon));
 
             supplier.withPool(poolBuilder.build());
@@ -128,6 +141,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -160,6 +177,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(rare))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -173,6 +194,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(veryRare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -205,6 +230,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -237,6 +266,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(rare))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -249,6 +282,11 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -281,6 +319,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -294,6 +336,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -326,6 +372,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -358,6 +408,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -390,6 +444,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -422,6 +480,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -454,6 +516,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -486,6 +552,10 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(rare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -513,18 +583,21 @@ public class ModLoot
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
-                        .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_PROTECTION).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.CLOAK_OF_THE_DOLPHIN).weight(rare))
+                        .with(ItemEntry.builder(ModItems.RING_OF_SWIMMING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.RING_OF_JUMPING).weight(rare))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(veryRare));
 
                 supplier.withPool(poolBuilder.build());
             } else
             if (VILLAGE_ARMORER_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
@@ -539,6 +612,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
                         .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.GAUNTLETS_OF_GOLEM_POWER).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -560,6 +634,8 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
                         .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());
@@ -580,6 +656,8 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_MACE).weight(rare))
                         .with(ItemEntry.builder(ModItems.IRON_DAGGER).weight(rare))
                         .with(ItemEntry.builder(ModItems.IRON_MACE).weight(rare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.MACE_OF_SMITING).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_CHESTPLATE).weight(rare));
 
                 supplier.withPool(poolBuilder2.build());

@@ -7,9 +7,7 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -17,43 +15,27 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-import static net.minecraft.entity.effect.StatusEffects.INVISIBILITY;
+import static net.minecraft.entity.effect.StatusEffects.*;
 
-public class CloakOfInvisibility extends TrinketItem
+public class GauntletsOfGolemPower extends TrinketItem
 {
-
-
-    public CloakOfInvisibility(Settings settings) {
+    public GauntletsOfGolemPower(Settings settings) {
         super(settings);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, World world, List<Text> list, TooltipContext context) {
-        list.add(new LiteralText("Become invisible").formatted(Formatting.LIGHT_PURPLE));
+        list.add(new LiteralText("Become stronger").formatted(Formatting.GREEN));
     }
 
-    @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity)
     {
         super.onEquip(stack, slot, entity);
+        entity.addStatusEffect(new StatusEffectInstance(STRENGTH, 999999, 0, true, false, false));
     }
 
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        super.tick(stack, slot, entity);
-
-        if (entity.isSneaking())
-        {
-            entity.addStatusEffect(new StatusEffectInstance(INVISIBILITY, 999999, 0, true, false, false));
-        } else
-        {
-            entity.removeStatusEffect(INVISIBILITY);
-        }
-    }
-
-    @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
-
+        entity.removeStatusEffect(STRENGTH);
     }
 }
