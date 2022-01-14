@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  #",
+    " S ",
+    "S "
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "feyrune:netherite_ingot"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "feyrune:netherite_mace"
+  }
+}

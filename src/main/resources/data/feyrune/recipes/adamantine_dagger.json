@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "#",
+    "S"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "feyrune:adamantine_ingot"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "feyrune:adamantine_dagger"
+  }
+}

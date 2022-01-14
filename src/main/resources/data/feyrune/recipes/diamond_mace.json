@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  #",
+    " S ",
+    "S "
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "feyrune:diamond"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "feyrune:diamond_mace"
+  }
+}

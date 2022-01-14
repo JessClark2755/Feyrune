@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  #",
+    " S",
+    "s"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:stone_mace"
+  }
+}
