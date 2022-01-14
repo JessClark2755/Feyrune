@@ -50,6 +50,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -78,6 +79,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -106,6 +108,7 @@ public class ModLoot
                     .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(50))
                     .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(rare))
                     .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
+                    .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(uncommon))
                     .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(uncommon));
 
             supplier.withPool(poolBuilder.build());
@@ -115,6 +118,7 @@ public class ModLoot
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
@@ -144,6 +148,7 @@ public class ModLoot
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(20))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
@@ -155,6 +160,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(veryRare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -184,6 +190,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -213,6 +220,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(50))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -223,6 +231,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -252,6 +261,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 supplier.withPool(poolBuilder.build());
@@ -262,6 +272,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -291,6 +302,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -320,6 +332,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -349,6 +362,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -378,6 +392,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(50))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -407,6 +422,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -436,6 +452,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(rare));
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
@@ -465,6 +482,7 @@ public class ModLoot
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
+                        .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.AMULET_OF_HEALTH).weight(veryRare));
 
                 supplier.withPool(poolBuilder.build());
