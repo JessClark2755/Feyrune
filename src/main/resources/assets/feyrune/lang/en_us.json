@@ -38,6 +38,7 @@
   "item.feyrune.ring_of_swimming": "§2Ring of Swimming",
   "item.feyrune.ring_of_jumping": "§2Ring of Jumping",
   "item.feyrune.gauntlets_of_golem_power": "§2Gauntlets of Golem Power",
+  "item.feyrune.bag_of_useful_items": "§2Bag of Useful Items",
 
   "item.feyrune.dagger_of_venom": "§3Dagger of Venom",
   "item.feyrune.mace_of_smiting": "§3Mace of Smiting",
@@ -47,6 +48,8 @@
   "block.feyrune.adamantine_ore": "Adamantine Ore",
   "block.feyrune.deepslate_adamantine_ore": "Deepslate Adamantine Ore",
   "block.feyrune.arcane_crystal_ore": "Arcane Crystal Ore",
+
+  "entity.feyrune.rat": "Giant Rat",
 
   "itemGroup.feyrune.adamantine": "Adamantine",
   "itemGroup.feyrune.magic_items": "Magic Items",

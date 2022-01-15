@@ -1,5 +1,6 @@
 package net.captainaxolotl.feyrune;
 
+import net.captainaxolotl.feyrune.entity.ModEntities;
 import net.captainaxolotl.feyrune.loot.ModLoot;
 import net.captainaxolotl.feyrune.world.feature.ModConfiguredFeatures;
 import net.captainaxolotl.feyrune.world.gen.ModWorldGen;
@@ -21,6 +22,7 @@ public class FeyruneMod implements ModInitializer
 	{
 		LOGGER.info("Loading Feyrune!");
 		ModConfiguredFeatures.registerConfiguredFeatures();
+		ModEntities.registerModEntities();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModLoot.registerLootTables();

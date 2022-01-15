@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures":
+  {
+    "layer0": "feyrune:item/bag_of_useful_items"
+  }
+}

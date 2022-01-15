@@ -39,7 +39,7 @@ public class ModItems
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item ADAMANTINE_SWORD = registerItem("adamantine_sword",
             new SwordItem(ModToolMaterial.ADAMANTINE, 5, -2.4f,
-                    new FabricItemSettings().group(ItemGroup.COMBAT)));
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
 
     //ADAMANTINE ARMOR
     public static final Item ADAMANTINE_HELMET = registerItem("adamantine_helmet",
@@ -70,6 +70,7 @@ public class ModItems
     public static final Item RING_OF_SWIMMING = registerItem("ring_of_swimming", new RingOfSwimming(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item RING_OF_JUMPING = registerItem("ring_of_jumping", new RingOfJumping(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item GAUNTLETS_OF_GOLEM_POWER = registerItem("gauntlets_of_golem_power", new GauntletsOfGolemPower(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+
 
     //FEYRUNE WEAPONS
     public static final Item ADAMANTINE_DAGGER = registerItem("adamantine_dagger",
