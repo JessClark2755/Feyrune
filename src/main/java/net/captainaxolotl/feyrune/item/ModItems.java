@@ -1,14 +1,10 @@
 package net.captainaxolotl.feyrune.item;
 
-import dev.emi.trinkets.api.Trinket;
-import dev.emi.trinkets.api.TrinketItem;
-import dev.emi.trinkets.api.TrinketsApi;
 import net.captainaxolotl.feyrune.FeyruneMod;
 import net.captainaxolotl.feyrune.item.custom.*;
 import net.captainaxolotl.feyrune.item.custom.trinket.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.data.DataTracker;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -70,7 +66,13 @@ public class ModItems
     public static final Item RING_OF_SWIMMING = registerItem("ring_of_swimming", new RingOfSwimming(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item RING_OF_JUMPING = registerItem("ring_of_jumping", new RingOfJumping(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item GAUNTLETS_OF_GOLEM_POWER = registerItem("gauntlets_of_golem_power", new GauntletsOfGolemPower(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
-
+    public static final Item BAG_OF_USEFUL_ITEMS = registerItem("bag_of_useful_items", new BagOfUsefulItems(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item BUCKET_OF_ENDLESS_WATER =
+            registerItem("bucket_of_endless_water", new BucketOfEndlessWater(new FabricItemSettings().group(ModItemGroups.FEYRUNE).maxCount(1)));
+    public static final Item BUCKET_OF_ENDLESS_LAVA =
+            registerItem("bucket_of_endless_lava", new BucketOfEndlessLava(new FabricItemSettings().group(ModItemGroups.FEYRUNE).maxCount(1)));
+    public static final Item ORB_OF_FIREBOLT = registerItem("orb_of_firebolt", new OrbOfFirebolt(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item ORB_OF_THE_CREEPER = registerItem("orb_of_the_creeper", new OrbOftheCreeper(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
 
     //FEYRUNE WEAPONS
     public static final Item ADAMANTINE_DAGGER = registerItem("adamantine_dagger",

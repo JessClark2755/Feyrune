@@ -6,10 +6,11 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.stat.Stats;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -20,10 +21,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Random;
 
-import static net.captainaxolotl.feyrune.item.ModItems.IRON_DAGGER;
-import static net.minecraft.item.Items.*;
-
-//BROKEN
+import static net.minecraft.sound.SoundEvents.*;
 
 public class BagOfUsefulItems extends TrinketItem
 {
@@ -45,41 +43,42 @@ public class BagOfUsefulItems extends TrinketItem
 
         Random random = new Random();
         int value = random.nextInt(0,10);
+        int cooldown = 600;
 
-        Item item;
+        String itemName = switch (value) {
+            case 0 -> "feyrune:iron_dagger";
+            case 1 -> "minecraft:lantern";
+            case 2 -> "minecraft:bow";
+            case 3 -> "minecraft:name_tag";
+            case 4 -> "minecraft:gold_ingot";
+            case 5 -> "minecraft:bread";
+            case 6 -> "minecraft:saddle";
+            case 7 -> "minecraft:oak_boat";
+            case 8 -> "minecraft:water_bucket";
+            case 9 -> "minecraft:apple";
+            default -> "minecraft:apple";
+        };
 
-        switch (value)
-        {
-            case 0: item = IRON_DAGGER;
-                break;
-            case 1: item = LANTERN;
-                break;
-            case 2: item = STICK;
-                break;
-            case 3: item = LADDER;
-                break;
-            case 4: item = GOLD_NUGGET;
-                break;
-            case 5: item = IRON_DOOR;
-                break;
-            case 6: item = SADDLE;
-                break;
-            case 7: item = OAK_BOAT;
-                break;
-            case 8: item = GLASS_PANE;
-                break;
-            case 9: item = APPLE;
-                break;
-            default: item = OAK_SAPLING;
+        ItemStack itemStack = user.getStackInHand(hand);
+        world.playSound((PlayerEntity) null, user.getX(), user.getY(), user.getZ(),
+                BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.NEUTRAL, 1F,
+                1F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+
+        user.getItemCooldownManager().set(this, cooldown);
+        user.incrementStat(Stats.USED.getOrCreateStat(this));
+        if (!world.isClient) {
+            ServerCommandSource commandSource = user.getCommandSource();
+            String name = user.getDisplayName().getString();
+
+            CommandManager manager = new CommandManager(CommandManager.RegistrationEnvironment.ALL);
+
+            manager.execute(commandSource, "/give " + name + " " + itemName);
+
+            return super.use(world, user, hand);
         }
 
-        ServerCommandSource commandSource = user.getCommandSource();
-        String name = user.getDisplayName().getString();
-
-        CommandManager manager = new CommandManager(CommandManager.RegistrationEnvironment.ALL);
-
-        manager.execute(commandSource, "/give " + name + " minecraft:apple");
-
-        return super.use(world, user, hand);
+        if (!user.getAbilities().creativeMode) {;
+        }
+        return TypedActionResult.success(itemStack, world.isClient());
     }
 }
