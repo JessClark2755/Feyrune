@@ -43,7 +43,7 @@ public class BagOfUsefulItems extends TrinketItem
 
         Random random = new Random();
         int value = random.nextInt(0,10);
-        int cooldown = 600;
+        int cooldown = 1200;
 
         String itemName = switch (value) {
             case 0 -> "feyrune:iron_dagger";
