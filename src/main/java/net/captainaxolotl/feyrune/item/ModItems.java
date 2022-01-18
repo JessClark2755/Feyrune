@@ -51,6 +51,9 @@ public class ModItems
             new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
 
+    public static final Item ADAMANTINE_HORSE_ARMOR = registerItem("adamantine_horse_armor",
+            new HorseArmorItem(9, "adamantine", new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+
     //ARCANE
     public static final Item ARCANE_DUST = registerItem("arcane_dust",
         new Item(new FabricItemSettings().group(ModItemGroups.FEYRUNE)));

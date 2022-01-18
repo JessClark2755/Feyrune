@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "feyrune:item/heart_amulet"
+    "layer0": "feyrune:item/adamantine_horse_armor"
   }
 }
