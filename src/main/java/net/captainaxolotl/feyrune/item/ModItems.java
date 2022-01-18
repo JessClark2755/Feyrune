@@ -125,7 +125,13 @@ public class ModItems
     public static final Item MACE_OF_SMITING = registerItem("mace_of_smiting",
             new MaceOfSmiting(ModToolMaterial.ADAMANTINE, 10, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
-
+    
+    //MAGIC ARMOR
+    public static final Item BOOTS_OF_WINTERLANDS = registerItem("boots_of_winterlands",
+           new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    
+    
     private static <T extends Item> T registerItem(String name, T item){
         return Registry.register(Registry.ITEM, new Identifier(FeyruneMod.MOD_ID, name), item);
     }
