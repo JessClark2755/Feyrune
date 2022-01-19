@@ -128,6 +128,9 @@ public class ModItems
     public static final Item MACE_OF_SMITING = registerItem("mace_of_smiting",
             new MaceOfSmiting(ModToolMaterial.ADAMANTINE, 10, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+        public static final Item STAFF_OF_TELEPORTATION = registerItem("staff_of_teleportation",
+            new StaffOfTeleportation(ModToolMaterial.ADAMANTINE, 5, -4f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     
     //MAGIC ARMOR
     public static final Item BOOTS_OF_WINTERLANDS = registerItem("boots_of_winterlands",
