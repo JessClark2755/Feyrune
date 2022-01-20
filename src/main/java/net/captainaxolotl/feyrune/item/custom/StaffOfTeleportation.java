@@ -43,7 +43,6 @@ public class StaffOfTeleportation extends ModStaffItem {
                 1F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
         if (player.getEntityWorld().isClient)
         {
-
             Vec3d lookPos = Vec3d.ofCenter(raycast(world, player, RaycastContext.FluidHandling.NONE).getBlockPos());
             player.setPosition(lookPos.x, lookPos.y, lookPos.z);
         }
@@ -61,7 +60,7 @@ public class StaffOfTeleportation extends ModStaffItem {
     }
         //copied from item.raycast
     protected static BlockHitResult raycast(World world, PlayerEntity player, RaycastContext.FluidHandling fluidHandling)
-    {
+    {   double range = 10;
         float f = player.getPitch();
         float g = player.getYaw();
         Vec3d vec3d = player.getEyePos();
@@ -72,7 +71,7 @@ public class StaffOfTeleportation extends ModStaffItem {
         float l = i * j;
         float n = h * j;
         double d = 5.0D;
-        Vec3d vec3d2 = vec3d.add((double)l * 5.0D, (double)k * 5.0D, (double)n * 5.0D);
-        return world.raycast(new RaycastContext(vec3d, vec3d2, RaycastContext.ShapeType.OUTLINE, fluidHandling, player));
+        Vec3d vec3d2 = vec3d.add((double)l* range, (double)k * range, (double)n * range);
+             return world.raycast(new RaycastContext(vec3d, vec3d2, RaycastContext.ShapeType.OUTLINE, fluidHandling, player));
     }
 }
