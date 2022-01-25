@@ -1,6 +1,7 @@
 package net.captainaxolotl.feyrune.loot;
 
 import net.captainaxolotl.feyrune.FeyruneMod;
+import net.captainaxolotl.feyrune.config.ModConfigs;
 import net.captainaxolotl.feyrune.item.ModItems;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
@@ -33,11 +34,13 @@ public class ModLoot
     private static final Identifier VILLAGE_WEAPONSMITH_CHEST = new Identifier("minecraft", "chests/village/village_weaponsmith");
     private static final Identifier WOODLAND_MANSION_CHEST = new Identifier("minecraft", "chests/woodland_mansion");
 
-    private static final int uncommon = 50;
-    private static final int rare = 25;
-    private static final int veryRare = 5;
-    private static final int legendary = 1;
 
+    private static final int magicBase = ModConfigs.MAGIC_BASE;
+    private static final int adamantineBase = ModConfigs.ADAMANTINE_BASE;
+    private static final int uncommon = ModConfigs.UNCOMMON;
+    private static final int rare = ModConfigs.RARE;
+    private static final int veryRare = ModConfigs.VERY_RARE;
+    private static final int legendary = ModConfigs.LEGENDARY;
 
 
     public static void registerLootTables()
@@ -48,7 +51,7 @@ public class ModLoot
             {
                 FabricLootPoolBuilder poolBuilder1 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -65,7 +68,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -87,7 +90,7 @@ public class ModLoot
             if (TREASURE_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -104,7 +107,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -126,7 +129,7 @@ public class ModLoot
             if (BASTION_TREASURE_CHEST.equals(id)) {
             FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                     .rolls(ConstantLootNumberProvider.create(1))
-                    .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(50))
+                    .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                     .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(rare))
                     .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
                     .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(uncommon))
@@ -146,7 +149,7 @@ public class ModLoot
             if (DESERT_PYRAMID_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
@@ -163,7 +166,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -186,7 +189,7 @@ public class ModLoot
             if (END_CITY_TREASURE_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(20))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(uncommon))
@@ -206,7 +209,7 @@ public class ModLoot
             if (IGLOO_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
@@ -223,7 +226,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -246,7 +249,7 @@ public class ModLoot
             if (JUNGLE_TEMPLE_TREASURE_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -263,7 +266,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -286,7 +289,7 @@ public class ModLoot
             if (NETHER_BRIDGE_TREASURE_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(50))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -306,7 +309,7 @@ public class ModLoot
             if (PILLAGER_OUTPOST_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -323,7 +326,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -346,7 +349,7 @@ public class ModLoot
             if (RUINED_PORTAL_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -366,7 +369,7 @@ public class ModLoot
             if (SHIPWRECK_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -383,7 +386,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -406,7 +409,7 @@ public class ModLoot
             if (SIMPLE_DUNGEON_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -423,7 +426,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -446,7 +449,7 @@ public class ModLoot
             if (STRONGHOLD_CORRIDOR_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -463,7 +466,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -486,7 +489,7 @@ public class ModLoot
             if (STRONGHOLD_CROSSING_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -503,7 +506,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -526,7 +529,7 @@ public class ModLoot
             if (WOODLAND_MANSION_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(50))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(rare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -543,7 +546,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -566,7 +569,7 @@ public class ModLoot
             if (UNDERWATER_RUIN_BIG_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -583,7 +586,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -606,7 +609,7 @@ public class ModLoot
             if (UNDERWATER_RUIN_SMALL_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(uncommon))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(veryRare))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(rare))
@@ -623,7 +626,7 @@ public class ModLoot
 
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -646,7 +649,7 @@ public class ModLoot
             if (VILLAGE_TEMPLE_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(magicBase))
                         .with(ItemEntry.builder(ModItems.GOGGLES_OF_NIGHT).weight(rare))
                         .with(ItemEntry.builder(ModItems.CLOAK_OF_INVISIBILITY).weight(legendary))
                         .with(ItemEntry.builder(ModItems.DAGGER_OF_VENOM).weight(veryRare))
@@ -666,7 +669,7 @@ public class ModLoot
             if (VILLAGE_ARMORER_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -689,7 +692,7 @@ public class ModLoot
             {
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
@@ -712,7 +715,7 @@ public class ModLoot
             if (VILLAGE_WEAPONSMITH_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(80))
+                        .with(ItemEntry.builder(ModItems.ADAMANTINE_INGOT).weight(adamantineBase))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_AXE).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_BOOTS).weight(rare))
                         .with(ItemEntry.builder(ModItems.ADAMANTINE_HELMET).weight(rare))
