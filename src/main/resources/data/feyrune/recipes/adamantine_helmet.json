@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "###",
+    "# #"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "feyrune:adamantine_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "feyrune:adamantine_helmet"
+  }
+}

@@ -130,7 +130,7 @@ public class ModItems
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     
     //MAGIC ARMOR
-    public static final Item BOOTS_OF_WINTERLANDS = registerItem("boots_of_winterlands",
+    public static final Item BOOTS_OF_THE_WINTERLANDS = registerItem("boots_of_the_winterlands",
            new ArmorItem(AdamantineArmorMaterial.ADAMANTINE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     
