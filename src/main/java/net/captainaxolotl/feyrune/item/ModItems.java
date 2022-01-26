@@ -84,11 +84,17 @@ public class ModItems
     public static final Item ADAMANTINE_MACE = registerItem("adamantine_mace",
             new ModMaceItem(ModToolMaterial.ADAMANTINE, 8, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item ADAMANTINE_STAFF = registerItem("adamantine_staff",
+            new ModStaffItem(ModToolMaterial.ADAMANTINE, 4, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item WOODEN_DAGGER = registerItem("wooden_dagger",
             new ModDaggerItem(ToolMaterials.WOOD, 1, 0f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item WOODEN_MACE = registerItem("wooden_mace",
             new ModMaceItem(ToolMaterials.WOOD, 7, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item WOODEN_STAFF = registerItem("wooden_staff",
+            new ModStaffItem(ToolMaterials.WOOD, 3, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item STONE_DAGGER = registerItem("stone_dagger",
             new ModDaggerItem(ToolMaterials.STONE, 1, 0f,
@@ -96,11 +102,17 @@ public class ModItems
     public static final Item STONE_MACE = registerItem("stone_mace",
             new ModMaceItem(ToolMaterials.STONE, 7, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item STONE_STAFF = registerItem("stone_staff",
+            new ModStaffItem(ToolMaterials.STONE, 3, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item IRON_DAGGER = registerItem("iron_dagger",
             new ModDaggerItem(ToolMaterials.IRON, 1, 0f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item IRON_MACE = registerItem("iron_mace",
             new ModMaceItem(ToolMaterials.IRON, 7, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item IRON_STAFF = registerItem("iron_staff",
+            new ModStaffItem(ToolMaterials.IRON, 3, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item GOLDEN_DAGGER = registerItem("golden_dagger",
             new ModDaggerItem(ToolMaterials.GOLD, 1, 0f,
@@ -108,17 +120,26 @@ public class ModItems
     public static final Item GOLDEN_MACE = registerItem("golden_mace",
             new ModMaceItem(ToolMaterials.GOLD, 7, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item GOLDEN_STAFF = registerItem("golden_staff",
+            new ModStaffItem(ToolMaterials.GOLD, 3, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger",
             new ModDaggerItem(ToolMaterials.DIAMOND, 1, 0f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item DIAMOND_MACE = registerItem("diamond_mace",
             new ModMaceItem(ToolMaterials.DIAMOND, 7, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item DIAMOND_STAFF = registerItem("diamond_staff",
+            new ModStaffItem(ToolMaterials.DIAMOND, 3, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger",
             new ModDaggerItem(ToolMaterials.NETHERITE, 1, 0f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
     public static final Item NETHERITE_MACE = registerItem("netherite_mace",
             new ModMaceItem(ToolMaterials.NETHERITE, 7, -3f,
+                    new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
+    public static final Item NETHERITE_STAFF = registerItem("netherite_staff",
+            new ModStaffItem(ToolMaterials.NETHERITE, 3, -3f,
                     new FabricItemSettings().group(ModItemGroups.FEYRUNE)));
 
     //MAGIC WEAPONS
